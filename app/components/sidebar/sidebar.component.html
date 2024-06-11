@@ -1,0 +1,42 @@
+          <div class="sidebar p-4" [class.open]="isOpen" > 
+            <a href="index3.html" class="brand-link ">
+                <img src="../../../assets/AdminLTELogo.png  " alt="AdminLTE Logo"  style="opacity: .8 ; max-height: 33px; ">
+                <span class="brand-text font-weight-light m-2">AdminLTE 3</span>
+                </a>
+              <a  data-lte-toggle="sidebar" role="button" (click)="toggleSidebar()" style="float: right ; " class="fs-6 ">
+                <i class="bi bi-list"></i>
+              </a>
+            
+
+            <div>
+              <div class="col -6">
+                <div class="sidebar-wrapper">
+                  <nav class="mt-2">
+                    <!--begin::Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                      <li class="nav-item dropdown">
+                        <a class="btn btn-primary  btn-md  dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dashboard
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a routerLink="/dashboard/v1" class="dropdown-item" [ngClass]="{'selected': getSelectedRoute() === '/dashboard/v1'}">Dashboard v1</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a routerLink="/dashboard/v2" class="dropdown-item" [ngClass]="{'selected': getSelectedRoute() === '/dashboard/v2'}">Dashboard v2</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a routerLink="/dashboard/v3" class="dropdown-item" [ngClass]="{'selected': getSelectedRoute() === '/dashboard/v3'}">Dashboard v3</a></li>
+                        </ul>
+                        
+                      </li>
+                    </ul>
+                    <!--end::Sidebar Menu-->
+                  </nav>
+                </div>
+              </div>
+              
+</div>            
+            <!-- <ul class="sidebar-menu">            
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul> -->
+   

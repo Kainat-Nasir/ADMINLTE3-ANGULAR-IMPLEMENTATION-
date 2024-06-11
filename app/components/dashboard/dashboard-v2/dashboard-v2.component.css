@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+  }
+  .progress-bars-container {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    gap: 20px; /* Adds vertical spacing between each progress bar */
+}
+
+.progress-bars-container > div {
+    width: 100%; /* Ensures each progress bar takes full width */
+    margin-left: auto; /* Pushes each progress bar to the right */
+}
+.span{
+    font-weight: bold;
+}

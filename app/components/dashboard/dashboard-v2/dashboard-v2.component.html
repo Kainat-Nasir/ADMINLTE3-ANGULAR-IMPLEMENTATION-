@@ -1,0 +1,142 @@
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+      
+      <!--begin::App Main-->
+      <main class="app-main">
+        <!--begin::App Content Header-->
+        <div class="app-content-header py-3">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h3 class="mb-0 font-weight-bold">Dashboard v2</h3>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-end">
+                <ol class="breadcrumb my-0 p-0">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Dashboard v2</li>
+                </ol>
+              </div>
+            </div>
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+        </div>
+        <div class="app-content">
+          <!--begin::Container-->
+          <div class="container-fluid mt-3">
+            <!-- Info boxes -->
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box bg-info text-white rounded shadow-sm p-4">
+                  <span class="info-box-icon">
+                    <i class="bi bi-gear-fill"></i>
+                  </span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">CPU Traffic</span>
+                    <span class="info-box-number">10<small>%</small></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box bg-danger text-white rounded shadow-sm p-4">
+                  <span class="info-box-icon">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                  </span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">Likes</span>
+                    <span class="info-box-number">41,410</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box bg-success text-white rounded shadow-sm p-4">
+                  <span class="info-box-icon">
+                    <i class="bi bi-cart-fill"></i>
+                  </span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">Sales</span>
+                    <span class="info-box-number">760</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box bg-warning text-white rounded shadow-sm p-4">
+                  <span class="info-box-icon">
+                    <i class="bi bi-people-fill"></i>
+                  </span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">New Members</span>
+                    <span class="info-box-number">2,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+         <!--begin::Row-->
+         <div class="row" [class.hidden]="isHidden">
+          <div class="col-md-12">
+              <div class="card mb-3">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                      <h5 class="card-title">Monthly Recap Report</h5>
+                      <div class="btn-group">
+                          <!-- X Button -->
+                          <button type="button" class="btn btn-tool" (click)="toggleVisibility()">
+                              <i class="bi bi-x"></i>
+                          </button>
+                          <!-- Wrench Button -->
+                          <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+                              <i class="bi bi-wrench"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right" role="menu">
+                              <a href="#" class="dropdown-item">Action</a>
+                              <a href="#" class="dropdown-item">Another action</a>
+                              <a href="#" class="dropdown-item">Something else here</a>
+                              <a class="dropdown-divider"></a>
+                              <a href="#" class="dropdown-item">Separated link</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-8">
+                          <div class="chart-container">
+                              <canvas id="bar">{{ chart }}</canvas>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="card-title d-flex justify-content-between align-items-center">Goal Completion
+
+                        </h5>
+                          <div class="progress-bars-container">
+                            <div>
+                              <span>Add Products to Cart</span>
+                              <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+                             </div>
+                             <div>
+                              <span>Complete Purchase</span>
+                              <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+                          </div>
+                          <div>
+                            <span>Visit Premium Page</span>
+                            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+                        </div>
+                        <div>
+                          <span>Send Inquiries</span>
+                          <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+                      </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+</main>
+</div>
+</body>
